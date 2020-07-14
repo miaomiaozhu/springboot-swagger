@@ -38,7 +38,7 @@ public class SwaggerController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     @ResponseBody
     @ApiOperation(value = "修改用户",notes = "修改用户")
-    public Object updateUser(@RequestBody User user) {
+    public Object updateUser(@RequestBody() User user) {
         return "update";
     }
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
