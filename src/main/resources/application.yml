@@ -1,0 +1,11 @@
+server:
+port: 8080
+
+spring:
+datasource:
+driver-class-name: com.mysql.jdbc.Driver
+url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false	#数据库链接填写自己的
+username: root		#密码和用户名填写自己的
+password: MyNewPass@123
+type: com.alibaba.druid.pool.DruidDataSource
+
